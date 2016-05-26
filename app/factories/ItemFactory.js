@@ -46,6 +46,7 @@ app.factory("itemStorage", function($q, $http, firebaseURL){
   }
 
   var getSingleItem = function(itemId){
+    console.log("itemID", itemId);
     return $q(function(resolve, reject){
       $http.get(firebaseURL + "items/"+itemId+".json")
         .success(function(itemObject){
