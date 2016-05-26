@@ -1,0 +1,31 @@
+<h1>A Short List Of People & Notes On Where They Live</h1>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+      <input type='text' class="form-control" placeholder='search for...' ng-model='searchText'/>
+    </div>
+  </div>
+</div>
+<div class = "panel panel-default">
+  <div class="panel-body">
+      <div class="col-xs-3">Who?</div>
+      <div class="col-xs-3">Primary Contact</div>
+      <div class="col-xs-3">Street Address</div>
+      <div class="col-xs-3">City State & Zip</div>
+  </div>
+</div>
+
+<div ng-repeat="entry in items | filter: searchText">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="col-xs-3"><a ng-href="#/items/{{entry.id}}">{{entry.name}}</a></div>
+      <div class="col-xs-3">{{entry.contact}}</div>
+      <div class="col-xs-3">{{entry.address}}</div>
+      <div class="col-xs-2">{{entry.region}}</div>
+      <div class="col-xs-1"><button class="btn btn-danger" ng-click="itemDelete(entry.id)"><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+    </div>
+  </div>
+</div>
