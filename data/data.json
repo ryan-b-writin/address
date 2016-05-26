@@ -1,0 +1,22 @@
+{
+  "items": {
+    "item1": {
+      "name": "Leroy Jenkins",
+      "contact": "1-800-ler-oyJK",
+      "address": "the room with the dragon eggs",
+      "region": "Blackrock Mountain"
+    },
+    "item2": {
+      "name": "Kel'Thuzad",
+      "contact": "kel@thuzad.com",
+      "address": "Frostwyrm Lair",
+      "region": "Necropolis Naxxramus"
+    },
+    "item3": {
+      "name": "Yogg-Saron",
+      "contact": "he'll find you",
+      "address": "Hope's End",
+      "region": "Bottom of your deck"
+    }
+  }
+}
